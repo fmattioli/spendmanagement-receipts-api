@@ -1,18 +1,19 @@
 # spendmanagement-apigateway
-This application has te purpose to be a gateway from the spendmanagement project.
+This application has the purpose of being a gateway for the spendmanagement project.
 
 # Related projects
 > https://github.com/fmattioli/spendmanagement-api <br/>
 > https://github.com/fmattioli/spendmanagement-readmodel <br/>
 > https://github.com/fmattioli/spendmanagement-domain <br/>
 > https://github.com/fmattioli/spendmanagement-eventhandler <br/>
+> https://github.com/fmattioli/spendmanagement-indentity <br/>
 > https://github.com/fmattioli/spendmanagement-eventsourcing <br/>
 
 # Related packages
 > https://github.com/fmattioli/spendmanagement-contracts <br/>
 > https://github.com/fmattioli/spendmanagement-topics
 
-# How it works?
+# How does it work?
 ![Alt text](src/SpendManagementDiagramFlow.jpg?raw=true "Title")
 
 # Essential to understand
