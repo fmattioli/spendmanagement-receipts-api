@@ -11,7 +11,6 @@ builder.Services.AddSwaggerForOcelot(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,7 +20,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
@@ -30,7 +28,6 @@ app.UseSwaggerForOcelotUI(options =>
 {
     options.DownstreamSwaggerEndPointBasePath = "/swagger/docs";
     options.PathToSwaggerGenerator = "/swagger/docs";
-
 });
 
 app.UseOcelot().Wait();
