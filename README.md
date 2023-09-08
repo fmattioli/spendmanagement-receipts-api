@@ -6,8 +6,7 @@ This application has the purpose of being a gateway for the spendmanagement proj
 > https://github.com/fmattioli/spendmanagement-readmodel <br/>
 > https://github.com/fmattioli/spendmanagement-domain <br/>
 > https://github.com/fmattioli/spendmanagement-eventhandler <br/>
-> https://github.com/fmattioli/spendmanagement-identity <br/>
-> https://github.com/fmattioli/spendmanagement-eventsourcing <br/>
+> https://github.com/fmattioli/spendmanagement-identity 
 
 # Related packages
 > https://github.com/fmattioli/spendmanagement-contracts <br/>
