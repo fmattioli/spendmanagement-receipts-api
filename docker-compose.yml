@@ -1,0 +1,21 @@
+version: "3.7"
+
+networks:
+  spendmanagement:
+    external:
+      name: spendmanagement-network
+
+services:
+
+    apigateway:
+      container_name: spendmanagement_apigateway
+      build:
+        context: .
+        dockerfile: Dockerfile
+      image: spendmanagement_apigateway
+      environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+      ports:
+        - "8079:80"
+      networks:
+        - spendmanagement      
