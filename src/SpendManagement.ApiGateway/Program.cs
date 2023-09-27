@@ -1,13 +1,23 @@
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using SpendManagement.ApiGateway.Extensions;
+using SpendManagement.ApiGateway.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.AddJsonFile("conf/ocelot.json", optional: false, reloadOnChange: true);
-builder.Configuration.AddJsonFile("conf/appsettings.json", optional: false, reloadOnChange: true);
+
+var enviroment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+builder.Configuration
+    .AddJsonFile("conf/appsettings.json", false, reloadOnChange: true)
+    .AddJsonFile($"conf/appsettings.{enviroment}.json", true, reloadOnChange: true)
+    .AddJsonFile("conf/ocelot.json", true, reloadOnChange: true)
+    .AddJsonFile($"conf/ocelot.{enviroment}.json", true, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
+var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
 builder.Services
-    .AddHealthCheckers(builder.Configuration)
+    .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration);
 
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
@@ -32,6 +42,6 @@ app.UseSwaggerForOcelotUI(options =>
     options.PathToSwaggerGenerator = "/swagger/docs";
 });
 
-app.UseOcelot().Wait();
-
+app.MapGet("/felipe", () => enviroment);
+app.UseOcelot();
 app.Run();
