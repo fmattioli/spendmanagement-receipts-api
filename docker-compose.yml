@@ -12,8 +12,9 @@ services:
       build:
         context: .
         dockerfile: Dockerfile
-      image: spendmanagement_apigateway
+      image: spendmanagement_apigateway:${APP_VERSION}
       environment:
+        - APP_VERSION=${APP_VERSION}
         - ASPNETCORE_ENVIRONMENT=Docker
       ports:
         - "8079:80"
