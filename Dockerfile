@@ -7,14 +7,14 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["src/SpendManagement.ApiGateway/SpendManagement.ApiGateway.csproj", "SpendManagement.ApiGateway/"]
+COPY ["src/SpendManagement.ApiGateway.csproj", "SpendManagement.ApiGateway/"]
 RUN dotnet restore "SpendManagement.ApiGateway/SpendManagement.ApiGateway.csproj"
 COPY . .
 
-RUN dotnet build "src/SpendManagement.ApiGateway/SpendManagement.ApiGateway.csproj" -c Release -o /app/build
+RUN dotnet build "src/SpendManagement.ApiGateway.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "src/SpendManagement.ApiGateway/SpendManagement.ApiGateway.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "src/SpendManagement.ApiGateway.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app

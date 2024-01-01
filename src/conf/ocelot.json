@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_identity",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/signUp",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_identity",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/login",
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_identity",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addUserInClaim",
@@ -45,7 +45,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_identity",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/refreshLogin",
@@ -58,7 +58,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_readmodel",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getCategories",
@@ -71,7 +71,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_readmodel",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getCategory/{id}",
@@ -84,7 +84,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_readmodel",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getReceipts",
@@ -97,7 +97,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_readmodel",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getReceipt/{id}",
@@ -110,7 +110,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_api",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addCategory",
@@ -123,7 +123,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_api",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
@@ -136,7 +136,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_api",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
@@ -149,7 +149,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_api",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addReceipt",
@@ -162,7 +162,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_api",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateReceipt/{id}",
@@ -175,7 +175,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement_api",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
@@ -190,7 +190,7 @@
         {
           "Name": "SpendManagement.Identity.API",
           "Version": "v1",
-          "Url": "http://spendmanagement_identity/swagger/v1/swagger.json"
+          "Url": "http://spendmanagement_identity:8080/swagger/v1/swagger.json"
         }
       ]
     },

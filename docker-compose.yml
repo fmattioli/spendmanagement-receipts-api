@@ -17,6 +17,6 @@ services:
         - APP_VERSION=${APP_VERSION}
         - ASPNETCORE_ENVIRONMENT=Docker
       ports:
-        - "8079:80"
+        - "8079:8080"
       networks:
         - spendmanagement
