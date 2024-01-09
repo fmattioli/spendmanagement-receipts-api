@@ -9,6 +9,7 @@ This application has the purpose of being a gateway for the spendmanagement proj
 > https://github.com/fmattioli/spendmanagement-identity 
 
 # Related packages
+> https://github.com/fmattioli/spendmanagement-webcontracts <br/>
 > https://github.com/fmattioli/spendmanagement-contracts <br/>
 > https://github.com/fmattioli/spendmanagement-topics
 
