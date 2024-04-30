@@ -1,5 +1,5 @@
 # spendmanagement-receipts-api
-This application has the purpose of being a gateway for the spendmanagement project.
+This application has the purpose of being a gateway for the spendmanagement-receipts boundary.
 
 # How does it works?
 ![Alt text](Diagram-Boundary.jpg?raw=true "Title")
