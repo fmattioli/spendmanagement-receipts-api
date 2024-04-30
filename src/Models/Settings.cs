@@ -1,19 +1,19 @@
-﻿namespace SpendManagement.ApiGateway.Models
+﻿namespace SpendManagement.Receipts.Api.Models
 {
     public interface ISettings
     {
-        SpendManagementIdentity? SpendManagementIdentity { get;}
-        SpendManagementApi? SpendManagementApi { get;}
-        SpendManagementReadModel? SpendManagementReadModel { get;}
-        SpendManagementDomain? SpendManagementDomain { get; }
-        SpendManagementEventHandler? SpendManagementEventHandler { get; }
+        SpendManagementIdentityApi? SpendManagementIdentityApi { get; }
+        ReceiptsCommandHandlerApi? ReceiptsCommandHandlerApi { get; }
+        ReceiptsQueryHandlerApi? ReceiptsQueryHandlerApi { get; }
+        ReceiptsDomainApi? ReceiptsDomainApi { get; }
+        ReceiptsEventHandler? ReceiptsEventHandler { get; }
     }
     public record Settings : ISettings
     {
-        public SpendManagementIdentity? SpendManagementIdentity { get; set; }
-        public SpendManagementApi? SpendManagementApi { get; set; }
-        public SpendManagementReadModel? SpendManagementReadModel { get; set; }
-        public SpendManagementDomain? SpendManagementDomain { get; set; }
-        public SpendManagementEventHandler? SpendManagementEventHandler { get; set; }
+        public SpendManagementIdentityApi? SpendManagementIdentityApi { get; set; }
+        public ReceiptsCommandHandlerApi? ReceiptsCommandHandlerApi { get; set; }
+        public ReceiptsQueryHandlerApi? ReceiptsQueryHandlerApi { get; set; }
+        public ReceiptsDomainApi? ReceiptsDomainApi { get; set; }
+        public ReceiptsEventHandler? ReceiptsEventHandler { get; set; }
     }
 }

@@ -7,16 +7,16 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["src/SpendManagement.ApiGateway.csproj", "SpendManagement.ApiGateway/"]
-RUN dotnet restore "SpendManagement.ApiGateway/SpendManagement.ApiGateway.csproj"
+COPY ["src/SpendManagement.Receipts.Api.csproj", "SpendManagement.Receipts.Api/"]
+RUN dotnet restore "SpendManagement.Receipts.Api/SpendManagement.Receipts.Api.csproj"
 COPY . .
 
-RUN dotnet build "src/SpendManagement.ApiGateway.csproj" -c Release -o /app/build
+RUN dotnet build "src/SpendManagement.Receipts.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "src/SpendManagement.ApiGateway.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "src/SpendManagement.Receipts.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SpendManagement.ApiGateway.dll"]
+ENTRYPOINT ["dotnet", "SpendManagement.Receipts.Api.dll"]
