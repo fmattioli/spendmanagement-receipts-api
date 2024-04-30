@@ -1,7 +1,7 @@
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using SpendManagement.ApiGateway.Extensions;
-using SpendManagement.ApiGateway.Models;
+using SpendManagement.Receipts.Api.Extensions;
+using SpendManagement.Receipts.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,5 +43,5 @@ app.UseSwaggerForOcelotUI(options =>
 });
 
 app.MapGet("/felipe", () => enviroment);
-app.UseOcelot();
+await app.UseOcelot();
 app.Run();

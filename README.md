@@ -2,7 +2,7 @@
 This application has the purpose of being a gateway for the spendmanagement project.
 
 # How does it works?
-![Alt text](SpendManagementDiagramFlow.jpg?raw=true "Title")
+![Alt text](Diagram-Boundary.jpg?raw=true "Title")
 
 # Projects
 > [spendmanagement-identity-api](https://github.com/fmattioli/spendmanagement-identity) <br/>

@@ -1,9 +1,9 @@
 ﻿using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using SpendManagement.ApiGateway.Extensions;
-using SpendManagement.ApiGateway.Models;
+using SpendManagement.Receipts.Api.Extensions;
+using SpendManagement.Receipts.Api.Models;
 
-namespace SpendManagement.ApiGateway.Extensions
+namespace SpendManagement.Receipts.Api.Extensions
 {
     public static class HealthChecksExtensions
     {
@@ -12,11 +12,11 @@ namespace SpendManagement.ApiGateway.Extensions
         public static IServiceCollection AddHealthCheckers(this IServiceCollection services, Settings? applicationSettings)
         {
             services.AddHealthChecks()
-                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementIdentity?.Url + UrlHealthCheck), name: "SpendManagement.Identity")
-                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementApi?.Url + UrlHealthCheck), name: "SpendManagement.Api")
-                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementReadModel?.Url + UrlHealthCheck), name: "SpendManagement.ReadModel")
-                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementDomain?.Url + UrlHealthCheck), name: "SpendManagement.Domain")
-                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementEventHandler?.Url + UrlHealthCheck), name: "SpendManagement.EventHandler");
+                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementIdentityApi?.Url + UrlHealthCheck), name: "SpendManagement.Identity")
+                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsCommandHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.CommandHandler.Api")
+                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsQueryHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.QueryHandler.Api")
+                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsDomainApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.Domain.Api")
+                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsEventHandler?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.EventHandler");
 
             services.AddHealthChecksUI()
                 .AddInMemoryStorage();
