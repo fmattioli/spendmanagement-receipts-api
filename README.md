@@ -6,9 +6,9 @@ This application has the purpose of being a gateway for the spendmanagement-rece
 
 # Projects
 > [spendmanagement-identity-api](https://github.com/fmattioli/spendmanagement-identity) <br/>
-> [receipts-commandhandler-api](https://github.com/fmattioli/spendmanagement-receipts-commandhandler-api)  <br/>
-> [receipts-queryhandler-api](https://github.com/fmattioli/spendmanagement-receipts-queryhandler-api)  <br/>
-> [receipts-domain-api](https://github.com/fmattioli/spendmanagement-receipts-domain-api)  <br/>
+> [spendmanagement-receipts-commandhandler-api](https://github.com/fmattioli/spendmanagement-receipts-commandhandler-api)  <br/>
+> [spendmanagement-receipts-queryhandler-api](https://github.com/fmattioli/spendmanagement-receipts-queryhandler-api)  <br/>
+> [spendmanagement-receipts-domain-api](https://github.com/fmattioli/spendmanagement-receipts-domain-api)  <br/>
 
 #  Packages
 > [spendmanagement-receipts-contracts](https://github.com/fmattioli/spendmanagement-receipts-contracts) <br/>
