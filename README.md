@@ -11,8 +11,8 @@ This application has the purpose of being a gateway for the spendmanagement-rece
 > [receipts-domain-api](https://github.com/fmattioli/spendmanagement-receipts-domain-api)  <br/>
 
 #  Packages
-> [receipts-contracts](https://github.com/fmattioli/spendmanagement-receipts-contracts) <br/>
-> [receipts-topics](https://github.com/fmattioli/spendmanagement-topics) <br/>
+> [spendmanagement-receipts-contracts](https://github.com/fmattioli/spendmanagement-receipts-contracts) <br/>
+> [spendmanagement-topics](https://github.com/fmattioli/spendmanagement-topics) <br/>
 
 
 # How to make it works on your machine?
