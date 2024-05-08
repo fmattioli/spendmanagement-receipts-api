@@ -1,5 +1,5 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:44335"
+    "BaseUrl": "https://spendmanagement-receipts-api-c4di.onrender.com:8080"
   }
 }
