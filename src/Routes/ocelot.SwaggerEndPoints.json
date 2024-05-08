@@ -18,7 +18,7 @@
         {
           "Name": "SpendManagement ReadModel",
           "Version": "v1",
-          "Url": "http://spendmanagement_readmodel/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-receipts-readmodel-api.onrender.com/swagger/v1/swagger.json"
         }
       ]
     },
@@ -29,7 +29,7 @@
         {
           "Name": "SpendManagement Api",
           "Version": "v1",
-          "Url": "http://spendmanagement_api/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-receipts.onrender.com/swagger/v1/swagger.json"
         }
       ]
     }
