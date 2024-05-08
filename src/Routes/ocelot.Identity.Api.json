@@ -3,6 +3,7 @@
     {
       "DownstreamPathTemplate": "/api/v1/signUp",
       "DownstreamScheme": "https",
+      "DownstreamSkipSslValidation": true,
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
@@ -11,10 +12,11 @@
       ],
       "UpstreamPathTemplate": "/signUp",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api"
+      "SwaggerKey": "SpendManagement.Identity.Api",
     },
     {
       "DownstreamPathTemplate": "/api/v1/login",
+      "DownstreamSkipSslValidation": true,
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {

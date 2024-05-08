@@ -23,7 +23,8 @@ var applicationSettings = builder.Configuration.GetSection("Settings").Get<Setti
 builder.Logging
     .ClearProviders()
     .AddFilter("Microsoft", LogLevel.Warning)
-    .AddFilter("Microsoft", LogLevel.Critical);
+    .AddFilter("Microsoft", LogLevel.Critical)
+    .AddFilter("Microsoft", LogLevel.Error);
 
 builder.Services
     .AddHealthCheckers(applicationSettings)
