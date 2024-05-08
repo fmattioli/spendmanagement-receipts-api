@@ -15,8 +15,7 @@ namespace SpendManagement.Receipts.Api.Extensions
                 .AddUrlGroup(new Uri(applicationSettings?.SpendManagementIdentityApi?.Url + UrlHealthCheck), name: "SpendManagement.Identity")
                 .AddUrlGroup(new Uri(applicationSettings?.ReceiptsCommandHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.CommandHandler.Api")
                 .AddUrlGroup(new Uri(applicationSettings?.ReceiptsQueryHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.QueryHandler.Api")
-                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsDomainApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.Domain.Api")
-                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsEventHandler?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.EventHandler");
+                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsDomainApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.Domain.Api");
 
             services.AddHealthChecksUI()
                 .AddInMemoryStorage();
