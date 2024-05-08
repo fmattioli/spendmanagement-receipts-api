@@ -10,7 +10,7 @@
           "Port": 8080
         }
       ],
-      "UpstreamPathTemplate": "/signUp",
+      "UpstreamPathTemplate": "/{everything}",
       "UpstreamHttpMethod": [ "Post" ],
       "SwaggerKey": "SpendManagement.Identity.Api",
       "UseServiceDiscovery": true,
