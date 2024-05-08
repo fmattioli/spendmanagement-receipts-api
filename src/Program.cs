@@ -39,7 +39,6 @@ var app = builder.Build();
 
 app.UseHealthChecks();
 app.UseSwagger()
-   .UseHttpsRedirection()
    .UseAuthorization();
 
 app.UseSwaggerForOcelotUI(options =>
