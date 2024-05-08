@@ -21,7 +21,7 @@ builder.Configuration
 var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
 builder.Services
-    //.AddHealthCheckers(applicationSettings)
+    .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration)
     .AddPolly();
 
@@ -37,7 +37,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-//app.UseHealthChecks();
+app.UseHealthChecks();
 app.UseSwagger()
    .UseHttpsRedirection()
    .UseAuthorization();
