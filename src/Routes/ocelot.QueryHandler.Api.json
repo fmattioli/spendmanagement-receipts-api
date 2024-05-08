@@ -14,7 +14,7 @@
       "SwaggerKey": "SpendManagement.ReadModel"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/getCategory/{id}",
+      "DownstreamPathTemplate": "/api/v1/getVariableReceipts",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -22,12 +22,12 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/getCategory/{id}",
+      "UpstreamPathTemplate": "/api/v1/getVariableReceipts",
       "UpstreamHttpMethod": [ "Get" ],
       "SwaggerKey": "SpendManagement.ReadModel"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/getReceipts",
+      "DownstreamPathTemplate": "/api/v1/getRecurringReceipts",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -35,20 +35,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/getReceipts",
-      "UpstreamHttpMethod": [ "Get" ],
-      "SwaggerKey": "SpendManagement.ReadModel"
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/getReceipt/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/api/v1/getReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/getRecurringReceipts",
       "UpstreamHttpMethod": [ "Get" ],
       "SwaggerKey": "SpendManagement.ReadModel"
     }
