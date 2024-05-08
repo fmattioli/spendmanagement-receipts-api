@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_readmodel",
+          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
           "Port": 80
         }
       ],
@@ -15,10 +15,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/getCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_readmodel",
+          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
           "Port": 80
         }
       ],
@@ -28,10 +28,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/getReceipts",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_readmodel",
+          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
           "Port": 80
         }
       ],
@@ -41,10 +41,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/getReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_readmodel",
+          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
           "Port": 80
         }
       ],

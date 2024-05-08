@@ -2,10 +2,10 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/addCategory",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_api",
+          "Host": "spendmanagement-receipts.onrender.com",
           "Port": 80
         }
       ],
@@ -15,10 +15,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_api",
+          "Host": "spendmanagement-receipts.onrender.com",
           "Port": 80
         }
       ],
@@ -28,10 +28,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_api",
+          "Host": "spendmanagement-receipts.onrender.com",
           "Port": 80
         }
       ],
@@ -41,10 +41,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/addReceipt",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_api",
+          "Host": "spendmanagement-receipts.onrender.com",
           "Port": 80
         }
       ],
@@ -54,10 +54,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_api",
+          "Host": "spendmanagement-receipts.onrender.com",
           "Port": 80
         }
       ],
@@ -67,10 +67,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement_api",
+          "Host": "spendmanagement-receipts.onrender.com",
           "Port": 80
         }
       ],
