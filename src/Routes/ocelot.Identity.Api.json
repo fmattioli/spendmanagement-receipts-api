@@ -12,7 +12,9 @@
       ],
       "UpstreamPathTemplate": "/api/v1/signUp",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api"
+      "SwaggerKey": "SpendManagement.Identity.Api",
+      "UseServiceDiscovery": true,
+      "DangerousAcceptAnyServerCertificateValidator": false
     },
     {
       "DownstreamPathTemplate": "/api/v1/login",
@@ -26,7 +28,9 @@
       ],
       "UpstreamPathTemplate": "/api/v1/login",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api"
+      "SwaggerKey": "SpendManagement.Identity.Api",
+      "UseServiceDiscovery": true,
+      "DangerousAcceptAnyServerCertificateValidator": false
     },
     {
       "DownstreamPathTemplate": "/api/v1/addUserInClaim",
