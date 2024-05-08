@@ -3,34 +3,28 @@
     {
       "DownstreamPathTemplate": "/api/v1/signUp",
       "DownstreamScheme": "https",
-      "DownstreamSkipSslValidation": true,
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
-          "Port": 8080
+          "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamPathTemplate": "/api/v1/signUp",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api",
-      "UseServiceDiscovery": true,
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "SwaggerKey": "SpendManagement.Identity.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/login",
-      "DownstreamSkipSslValidation": true,
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
-          "Port": 8080
+          "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/login",
+      "UpstreamPathTemplate": "/api/v1/login",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api",
-      "UseServiceDiscovery": true,
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "SwaggerKey": "SpendManagement.Identity.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/addUserInClaim",
@@ -38,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
-          "Port": 8080
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addUserInClaim",
@@ -51,7 +45,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
-          "Port": 8080
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/refresh-login",
@@ -64,7 +58,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
-          "Port": 8080
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getUserClaims",
