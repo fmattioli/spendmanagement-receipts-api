@@ -1,47 +1,52 @@
+using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.Provider.Polly;
 using SpendManagement.Receipts.Api.Extensions;
 using SpendManagement.Receipts.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var routes = "Routes";
 var enviroment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
 builder.Configuration
+    .AddOcelotWithSwaggerSupport(options =>
+    {
+        options.Folder = routes;
+    })
     .AddJsonFile("conf/appsettings.json", false, reloadOnChange: true)
-    .AddJsonFile($"conf/appsettings.{enviroment}.json", true, reloadOnChange: true)
-    .AddJsonFile("conf/ocelot.json", true, reloadOnChange: true)
-    .AddJsonFile($"conf/ocelot.{enviroment}.json", true, reloadOnChange: true)
-    .AddEnvironmentVariables();
+    .AddJsonFile($"conf/appsettings.{enviroment}.json", true, reloadOnChange: true);
 
 var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
 builder.Services
     .AddHealthCheckers(applicationSettings)
-    .AddOcelot(builder.Configuration);
+    .AddOcelot(builder.Configuration)
+    .AddPolly();
 
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services
-    .AddEndpointsApiExplorer()
-    .AddSwaggerGen();
+builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
+    .AddOcelot(routes, builder.Environment)
+    .AddEnvironmentVariables();
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseSwagger();
 app.UseHealthChecks();
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.UseStaticFiles();
-app.MapControllers();
+app.UseSwagger()
+   .UseHttpsRedirection()
+   .UseAuthorization();
 
 app.UseSwaggerForOcelotUI(options =>
 {
-    options.DownstreamSwaggerEndPointBasePath = "/swagger/docs";
     options.PathToSwaggerGenerator = "/swagger/docs";
 });
 
-app.MapGet("/felipe", () => enviroment);
-await app.UseOcelot();
+app.UseOcelot().Wait();
+app.MapControllers();
 app.Run();

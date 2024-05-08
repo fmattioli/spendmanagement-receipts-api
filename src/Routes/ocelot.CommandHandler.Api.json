@@ -1,0 +1,82 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/addCategory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/addCategory",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
+      "UpstreamHttpMethod": [ "Patch" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/addReceipt",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/addReceipt",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/updateReceipt/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/updateReceipt/{id}",
+      "UpstreamHttpMethod": [ "Patch" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "SwaggerKey": "SpendManagement.Api"
+    }
+  ]
+}

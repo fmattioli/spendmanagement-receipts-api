@@ -1,0 +1,69 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/signUp",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity.onrender.com",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/signUp",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Identity.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity.onrender.com",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Identity.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/addUserInClaim",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity.onrender.com",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/addUserInClaim",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Identity.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/refresh-login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity.onrender.com",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/refresh-login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Identity.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/getUserClaims",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity.onrender.com",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getUserClaims",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "SpendManagement.Identity.Api"
+    }
+  ]
+}
