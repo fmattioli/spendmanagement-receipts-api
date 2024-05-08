@@ -1,0 +1,37 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "SpendManagement.Identity.Api",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "SpendManagement.Identity.Api",
+          "Version": "v1",
+          "Url": "https://spendmanagement-identity.onrender.com/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "SpendManagement.ReadModel",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "SpendManagement ReadModel",
+          "Version": "v1",
+          "Url": "http://spendmanagement_readmodel/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "SpendManagement.Api",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "SpendManagement Api",
+          "Version": "v1",
+          "Url": "http://spendmanagement_api/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

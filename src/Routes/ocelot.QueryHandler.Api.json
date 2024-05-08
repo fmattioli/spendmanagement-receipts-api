@@ -1,0 +1,56 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/getCategories",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_readmodel",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getCategories",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "SpendManagement.ReadModel"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/getCategory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_readmodel",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getCategory/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "SpendManagement.ReadModel"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/getReceipts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_readmodel",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getReceipts",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "SpendManagement.ReadModel"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/getReceipt/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement_readmodel",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getReceipt/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "SpendManagement.ReadModel"
+    }
+  ]
+}
