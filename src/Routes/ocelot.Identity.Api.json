@@ -3,22 +3,18 @@
     {
       "DownstreamPathTemplate": "/api/v1/signUp",
       "DownstreamScheme": "https",
-      "DownstreamSkipSslValidation": true,
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-identity.onrender.com",
           "Port": 8080
         }
       ],
-      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamPathTemplate": "/signUp",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api",
-      "UseServiceDiscovery": true,
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "SwaggerKey": "SpendManagement.Identity.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/login",
-      "DownstreamSkipSslValidation": true,
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -28,9 +24,7 @@
       ],
       "UpstreamPathTemplate": "/login",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Identity.Api",
-      "UseServiceDiscovery": true,
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "SwaggerKey": "SpendManagement.Identity.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/addUserInClaim",
