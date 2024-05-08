@@ -40,7 +40,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/addReceipt",
+      "DownstreamPathTemplate": "/api/v1/addVariableReceipt",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -48,12 +48,12 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/addReceipt",
+      "UpstreamPathTemplate": "/api/v1/addVariableReceipt",
       "UpstreamHttpMethod": [ "Post" ],
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/updateReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -61,12 +61,12 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/updateReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -74,7 +74,46 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/addRecurringReceipt",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts.onrender.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/addRecurringReceipt",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts.onrender.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
+      "UpstreamHttpMethod": [ "Patch" ],
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts.onrender.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
       "SwaggerKey": "SpendManagement.Api"
     }
