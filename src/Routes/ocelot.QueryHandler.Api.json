@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getCategories",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getCategory/{id}",
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getReceipts",
@@ -45,7 +45,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/getReceipt/{id}",

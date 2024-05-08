@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addCategory",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
@@ -45,7 +45,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addReceipt",
@@ -58,7 +58,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateReceipt/{id}",
@@ -71,7 +71,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
