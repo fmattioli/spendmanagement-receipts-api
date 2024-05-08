@@ -14,7 +14,7 @@
       "UpstreamHttpMethod": [ "Post" ],
       "SwaggerKey": "SpendManagement.Identity.Api",
       "UseServiceDiscovery": true,
-      "DangerousAcceptAnyServerCertificateValidator": false
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/api/v1/login",
@@ -30,7 +30,7 @@
       "UpstreamHttpMethod": [ "Post" ],
       "SwaggerKey": "SpendManagement.Identity.Api",
       "UseServiceDiscovery": true,
-      "DangerousAcceptAnyServerCertificateValidator": false
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/api/v1/addUserInClaim",
