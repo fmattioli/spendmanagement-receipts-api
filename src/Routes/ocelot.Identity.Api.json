@@ -81,6 +81,13 @@
         "DurationOfBreak": 5000,
         "TimeoutValue": 3000
       },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Identity.Api"
     }
   ]

@@ -1,5 +1,11 @@
 {
   "GlobalConfiguration": {
     "BaseUrl": "https://spendmanagement-receipts-api-c4di.onrender.com"
+  },
+  "RateLimitOptions": {
+    "DisableRateLimitHeaders": false,
+    "QuotaExceededMessage": "Customize Tips!",
+    "HttpStatusCode": 123,
+    "ClientIdHeader": "Test"
   }
 }
