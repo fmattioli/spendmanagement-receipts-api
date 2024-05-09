@@ -11,7 +11,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/addCategory",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
@@ -24,7 +24,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
@@ -37,7 +37,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/addVariableReceipt",
@@ -50,7 +50,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/addVariableReceipt",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
@@ -63,7 +63,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
@@ -76,7 +76,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/addRecurringReceipt",
@@ -89,7 +89,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/addRecurringReceipt",
       "UpstreamHttpMethod": [ "Post" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
@@ -102,7 +102,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
@@ -115,7 +115,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
-      "SwaggerKey": "SpendManagement.Api"
+      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     }
   ]
 }

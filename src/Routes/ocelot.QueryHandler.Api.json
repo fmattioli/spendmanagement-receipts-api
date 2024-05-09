@@ -11,7 +11,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/getCategories",
       "UpstreamHttpMethod": [ "Get" ],
-      "SwaggerKey": "SpendManagement.ReadModel"
+      "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/getVariableReceipts",
@@ -24,7 +24,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/getVariableReceipts",
       "UpstreamHttpMethod": [ "Get" ],
-      "SwaggerKey": "SpendManagement.ReadModel"
+      "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/getRecurringReceipts",
@@ -37,7 +37,7 @@
       ],
       "UpstreamPathTemplate": "/api/v1/getRecurringReceipts",
       "UpstreamHttpMethod": [ "Get" ],
-      "SwaggerKey": "SpendManagement.ReadModel"
+      "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
     }
   ]
 }

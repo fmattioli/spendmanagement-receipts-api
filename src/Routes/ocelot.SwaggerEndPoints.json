@@ -12,22 +12,22 @@
       ]
     },
     {
-      "Key": "SpendManagement.ReadModel",
+      "Key": "SpendManagement.Receipts.QueryHandler.Api",
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "SpendManagement ReadModel",
+          "Name": "QueryHandler.Api",
           "Version": "v1",
           "Url": "https://spendmanagement-receipts-readmodel-api.onrender.com/swagger/v1/swagger.json"
         }
       ]
     },
     {
-      "Key": "SpendManagement.Api",
+      "Key": "SpendManagement.Receipts.CommandHandler.Api",
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "SpendManagement Api",
+          "Name": "CommandHandler.Api",
           "Version": "v1",
           "Url": "https://spendmanagement-receipts.onrender.com/swagger/v1/swagger.json"
         }
