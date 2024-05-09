@@ -76,12 +76,12 @@
       ],
       "UpstreamPathTemplate": "/api/v1/testCircuitBraker",
       "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
       "SwaggerKey": "SpendManagement.Identity.Api"
     }
-  ],
-  "QoSOptions": {
-    "ExceptionsAllowedBeforeBreaking": 2,
-    "DurationOfBreak": 5000,
-    "TimeoutValue": 3000
-  }
+  ]
 }
