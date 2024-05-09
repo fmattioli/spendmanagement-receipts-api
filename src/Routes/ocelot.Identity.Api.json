@@ -64,6 +64,19 @@
       "UpstreamPathTemplate": "/api/v1/getUserClaims",
       "UpstreamHttpMethod": [ "Get" ],
       "SwaggerKey": "SpendManagement.Identity.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/testCircuitBraker",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity.onrender.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/testCircuitBraker",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "SpendManagement.Identity.Api"
     }
   ],
   "QoSOptions": {
