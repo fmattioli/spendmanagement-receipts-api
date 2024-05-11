@@ -16,7 +16,7 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - name: Restore dependencies
-        run: dotnet restore src/Receipts.CommandHandler.API/Receipts.CommandHandler.API.csproj
+        run: dotnet restore src/SpendManagement.Receipts.Api.csproj
       - name: Build project
         run: dotnet build --no-restore --configuration Release src/SpendManagement.Receipts.Api.csproj
 
