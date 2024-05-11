@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -18,7 +18,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -31,7 +31,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -44,7 +44,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -57,7 +57,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -70,7 +70,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -83,7 +83,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -96,7 +96,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],
@@ -109,7 +109,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
           "Port": 443
         }
       ],

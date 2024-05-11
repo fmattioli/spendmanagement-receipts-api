@@ -7,7 +7,7 @@
         {
           "Name": "SpendManagement.Identity.Api",
           "Version": "v1",
-          "Url": "https://spendmanagement-identity.onrender.com/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-identity-api.onrender.com/swagger/v1/swagger.json"
         }
       ]
     },
@@ -18,7 +18,7 @@
         {
           "Name": "QueryHandler.Api",
           "Version": "v1",
-          "Url": "https://spendmanagement-receipts-readmodel-api.onrender.com/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-receipts-queryhandler-api.onrender.com/swagger/index.html"
         }
       ]
     },
@@ -29,7 +29,7 @@
         {
           "Name": "CommandHandler.Api",
           "Version": "v1",
-          "Url": "https://spendmanagement-receipts.onrender.com/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-receipts-commandhandler.onrender.com/swagger/v1/swagger.json"
         }
       ]
     }
