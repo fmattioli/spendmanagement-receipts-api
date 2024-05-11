@@ -20,8 +20,6 @@ builder.Configuration
 
 var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
-
-
 builder.Services
     .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration)
