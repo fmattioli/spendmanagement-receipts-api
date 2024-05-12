@@ -32,7 +32,8 @@ builder.Services
 
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 
-builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
     .AddOcelot(routes, builder.Environment)
     .AddEnvironmentVariables();
 
