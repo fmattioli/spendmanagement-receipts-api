@@ -19,11 +19,6 @@ builder.Configuration
 
 var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
-builder.Logging
-    .ClearProviders()
-    .AddFilter("Microsoft", LogLevel.Warning)
-    .AddFilter("Ocelot", LogLevel.Information);
-
 builder.Services
     .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration)
@@ -44,12 +39,11 @@ var app = builder.Build();
 
 app.UseHealthChecks();
 app.UseSwagger()
-   .UseAuthorization();
-
-app.UseSwaggerForOcelotUI(options =>
-{
-    options.PathToSwaggerGenerator = "/swagger/docs";
-});
+   .UseAuthorization()
+   .UseSwaggerForOcelotUI(options =>
+   {
+        options.PathToSwaggerGenerator = "/swagger/docs";
+   });
 
 app.UseOcelot().Wait();
 app.MapControllers();
