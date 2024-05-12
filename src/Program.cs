@@ -20,6 +20,11 @@ builder.Configuration
 
 var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
+builder.Logging
+    .ClearProviders()
+    .AddFilter("Microsoft", LogLevel.Warning)
+    .AddFilter("Microsoft", LogLevel.Critical);
+
 builder.Services
     .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration)
