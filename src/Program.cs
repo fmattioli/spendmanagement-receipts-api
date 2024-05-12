@@ -6,7 +6,6 @@ using SpendManagement.Receipts.Api.Extensions;
 using SpendManagement.Receipts.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
 var routes = "Routes";
 var enviroment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
