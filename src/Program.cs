@@ -30,7 +30,8 @@ builder.Services
     .AddOcelot(builder.Configuration)
     .AddPolly();
 
-builder.Services.AddSwaggerForOcelot(builder.Configuration);
+builder.Services
+    .AddSwaggerForOcelot(builder.Configuration);
 
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
