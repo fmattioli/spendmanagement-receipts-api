@@ -25,6 +25,7 @@ builder.Logging
     .AddFilter("Microsoft", LogLevel.Critical);
 
 builder.Services
+    .AddLoggingDependency()
     .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration)
     .AddPolly();
