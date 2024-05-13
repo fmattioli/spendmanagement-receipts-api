@@ -16,7 +16,7 @@
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "QueryHandler.Api",
+          "Name": "SpendManagement.Receipts.QueryHandler.Api",
           "Version": "v1",
           "Url": "https://spendmanagement-receipts-queryhandler-api.onrender.com/swagger/v1/swagger.json"
         }
@@ -27,7 +27,7 @@
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "CommandHandler.Api",
+          "Name": "SpendManagement.Receipts.CommandHandler.Api",
           "Version": "v1",
           "Url": "https://spendmanagement-receipts-commandhandler.onrender.com/swagger/v1/swagger.json"
         }
