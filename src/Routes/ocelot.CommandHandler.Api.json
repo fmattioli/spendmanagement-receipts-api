@@ -11,6 +11,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/addCategory",
       "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -24,6 +36,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -37,6 +61,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -50,6 +86,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/addVariableReceipt",
       "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -63,6 +111,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -76,6 +136,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -89,6 +161,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/addRecurringReceipt",
       "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -102,6 +186,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
       "UpstreamHttpMethod": [ "Patch" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     },
     {
@@ -115,6 +211,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
     }
   ]
