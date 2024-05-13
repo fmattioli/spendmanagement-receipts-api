@@ -11,6 +11,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/getCategories",
       "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
     },
     {
@@ -24,6 +36,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/getVariableReceipts",
       "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
     },
     {
@@ -37,6 +61,18 @@
       ],
       "UpstreamPathTemplate": "/api/v1/getRecurringReceipts",
       "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
       "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
     }
   ]
