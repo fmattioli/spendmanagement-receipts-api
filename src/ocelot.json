@@ -15,8 +15,8 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
@@ -44,16 +44,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -88,8 +88,8 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
@@ -117,16 +117,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -161,8 +161,8 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
@@ -190,16 +190,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -234,13 +234,13 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
-      "DownstreamPathTemplate": "/api/v1/addReceipt",
+      "DownstreamPathTemplate": "/api/v1/addVariableReceipt",
       "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
@@ -263,16 +263,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -290,7 +290,7 @@
       "UpstreamHttpMethod": [
         "Post"
       ],
-      "UpstreamPathTemplate": "/api/v1/addReceipt"
+      "UpstreamPathTemplate": "/api/v1/addVariableReceipt"
     },
     {
       "AddClaimsToRequest": {},
@@ -307,13 +307,13 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
-      "DownstreamPathTemplate": "/api/v1/updateReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
       "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
@@ -336,16 +336,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -363,7 +363,7 @@
       "UpstreamHttpMethod": [
         "Patch"
       ],
-      "UpstreamPathTemplate": "/api/v1/updateReceipt/{id}"
+      "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}"
     },
     {
       "AddClaimsToRequest": {},
@@ -380,13 +380,13 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
-      "DownstreamPathTemplate": "/api/v1/deleteReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
       "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
@@ -409,16 +409,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -436,7 +436,7 @@
       "UpstreamHttpMethod": [
         "Delete"
       ],
-      "UpstreamPathTemplate": "/api/v1/deleteReceipt/{id}"
+      "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}"
     },
     {
       "AddClaimsToRequest": {},
@@ -453,7 +453,226 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity.onrender.com",
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamPathTemplate": "/api/v1/addRecurringReceipt",
+      "DownstreamScheme": "https",
+      "FileCacheOptions": {
+        "TtlSeconds": 0,
+        "Region": "",
+        "Header": null
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "MaxConnectionsPerServer": 2147483647,
+        "UseCookieContainer": false,
+        "UseProxy": true,
+        "UseTracing": false,
+        "PooledConnectionLifetimeSeconds": null
+      },
+      "Key": null,
+      "LoadBalancerOptions": {
+        "Expiry": 2147483647,
+        "Key": "",
+        "Type": ""
+      },
+      "Priority": 1,
+      "QoSOptions": {
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
+      },
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": 0,
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "UpstreamPathTemplate": "/api/v1/addRecurringReceipt"
+    },
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {},
+      "AddQueriesToRequest": {},
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": null,
+        "AuthenticationProviderKeys": []
+      },
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
+      "DownstreamScheme": "https",
+      "FileCacheOptions": {
+        "TtlSeconds": 0,
+        "Region": "",
+        "Header": null
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "MaxConnectionsPerServer": 2147483647,
+        "UseCookieContainer": false,
+        "UseProxy": true,
+        "UseTracing": false,
+        "PooledConnectionLifetimeSeconds": null
+      },
+      "Key": null,
+      "LoadBalancerOptions": {
+        "Expiry": 2147483647,
+        "Key": "",
+        "Type": ""
+      },
+      "Priority": 1,
+      "QoSOptions": {
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
+      },
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": 0,
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Patch"
+      ],
+      "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}"
+    },
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {},
+      "AddQueriesToRequest": {},
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": null,
+        "AuthenticationProviderKeys": []
+      },
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts-commandhandler.onrender.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
+      "DownstreamScheme": "https",
+      "FileCacheOptions": {
+        "TtlSeconds": 0,
+        "Region": "",
+        "Header": null
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "MaxConnectionsPerServer": 2147483647,
+        "UseCookieContainer": false,
+        "UseProxy": true,
+        "UseTracing": false,
+        "PooledConnectionLifetimeSeconds": null
+      },
+      "Key": null,
+      "LoadBalancerOptions": {
+        "Expiry": 2147483647,
+        "Key": "",
+        "Type": ""
+      },
+      "Priority": 1,
+      "QoSOptions": {
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
+      },
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": 0,
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Delete"
+      ],
+      "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}"
+    },
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {},
+      "AddQueriesToRequest": {},
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": null,
+        "AuthenticationProviderKeys": []
+      },
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-identity-api.onrender.com",
           "Port": 443
         }
       ],
@@ -482,16 +701,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -526,7 +745,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity.onrender.com",
+          "Host": "spendmanagement-identity-api.onrender.com",
           "Port": 443
         }
       ],
@@ -555,16 +774,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -599,7 +818,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity.onrender.com",
+          "Host": "spendmanagement-identity-api.onrender.com",
           "Port": 443
         }
       ],
@@ -628,16 +847,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -672,7 +891,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity.onrender.com",
+          "Host": "spendmanagement-identity-api.onrender.com",
           "Port": 443
         }
       ],
@@ -701,16 +920,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -745,7 +964,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity.onrender.com",
+          "Host": "spendmanagement-identity-api.onrender.com",
           "Port": 443
         }
       ],
@@ -774,16 +993,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -818,8 +1037,81 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-identity-api.onrender.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamPathTemplate": "/api/v1/testCircuitBraker",
+      "DownstreamScheme": "https",
+      "FileCacheOptions": {
+        "TtlSeconds": 0,
+        "Region": "",
+        "Header": null
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "MaxConnectionsPerServer": 2147483647,
+        "UseCookieContainer": false,
+        "UseProxy": true,
+        "UseTracing": false,
+        "PooledConnectionLifetimeSeconds": null
+      },
+      "Key": null,
+      "LoadBalancerOptions": {
+        "Expiry": 2147483647,
+        "Key": "",
+        "Type": ""
+      },
+      "Priority": 1,
+      "QoSOptions": {
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
+      },
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": 0,
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "UpstreamPathTemplate": "/api/v1/testCircuitBraker"
+    },
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {},
+      "AddQueriesToRequest": {},
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": null,
+        "AuthenticationProviderKeys": []
+      },
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
@@ -847,16 +1139,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -891,13 +1183,13 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
-      "DownstreamPathTemplate": "/api/v1/getCategory/{id}",
+      "DownstreamPathTemplate": "/api/v1/getVariableReceipts",
       "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
@@ -920,16 +1212,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -947,7 +1239,7 @@
       "UpstreamHttpMethod": [
         "Get"
       ],
-      "UpstreamPathTemplate": "/api/v1/getCategory/{id}"
+      "UpstreamPathTemplate": "/api/v1/getVariableReceipts"
     },
     {
       "AddClaimsToRequest": {},
@@ -964,13 +1256,13 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
+          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
-      "DownstreamPathTemplate": "/api/v1/getReceipts",
+      "DownstreamPathTemplate": "/api/v1/getRecurringReceipts",
       "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
@@ -993,16 +1285,16 @@
       },
       "Priority": 1,
       "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
       },
       "RequestIdKey": null,
       "RouteClaimsRequirement": {},
@@ -1020,80 +1312,7 @@
       "UpstreamHttpMethod": [
         "Get"
       ],
-      "UpstreamPathTemplate": "/api/v1/getReceipts"
-    },
-    {
-      "AddClaimsToRequest": {},
-      "AddHeadersToRequest": {},
-      "AddQueriesToRequest": {},
-      "AuthenticationOptions": {
-        "AllowedScopes": [],
-        "AuthenticationProviderKey": null,
-        "AuthenticationProviderKeys": []
-      },
-      "ChangeDownstreamPathTemplate": {},
-      "DangerousAcceptAnyServerCertificateValidator": false,
-      "DelegatingHandlers": [],
-      "DownstreamHeaderTransform": {},
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "spendmanagement-receipts-readmodel-api.onrender.com",
-          "Port": 80
-        }
-      ],
-      "DownstreamHttpMethod": null,
-      "DownstreamHttpVersion": null,
-      "DownstreamPathTemplate": "/api/v1/getReceipt/{id}",
-      "DownstreamScheme": "https",
-      "FileCacheOptions": {
-        "TtlSeconds": 0,
-        "Region": "",
-        "Header": null
-      },
-      "HttpHandlerOptions": {
-        "AllowAutoRedirect": false,
-        "MaxConnectionsPerServer": 2147483647,
-        "UseCookieContainer": false,
-        "UseProxy": true,
-        "UseTracing": false,
-        "PooledConnectionLifetimeSeconds": null
-      },
-      "Key": null,
-      "LoadBalancerOptions": {
-        "Expiry": 2147483647,
-        "Key": "",
-        "Type": ""
-      },
-      "Priority": 1,
-      "QoSOptions": {
-        "DurationOfBreak": 1,
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "TimeoutValue": 0
-      },
-      "RateLimitOptions": {
-        "ClientWhitelist": [],
-        "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
-      },
-      "RequestIdKey": null,
-      "RouteClaimsRequirement": {},
-      "RouteIsCaseSensitive": false,
-      "SecurityOptions": {
-        "IPAllowedList": [],
-        "IPBlockedList": [],
-        "ExcludeAllowedFromBlocked": false
-      },
-      "ServiceName": null,
-      "ServiceNamespace": null,
-      "Timeout": 0,
-      "UpstreamHeaderTransform": {},
-      "UpstreamHost": null,
-      "UpstreamHttpMethod": [
-        "Get"
-      ],
-      "UpstreamPathTemplate": "/api/v1/getReceipt/{id}"
+      "UpstreamPathTemplate": "/api/v1/getRecurringReceipts"
     }
   ],
   "DynamicRoutes": [],
