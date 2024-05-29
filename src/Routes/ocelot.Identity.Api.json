@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -30,7 +30,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -55,7 +55,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -80,7 +80,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -105,7 +105,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -130,7 +130,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],

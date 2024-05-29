@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "https://spendmanagement-receipts-api-c4di.onrender.com"
+    "BaseUrl": "https://spendmanagement-receipts-api.8ya11r.easypanel.host"
   },
   "RateLimitOptions": {
     "DisableRateLimitHeaders": false,
