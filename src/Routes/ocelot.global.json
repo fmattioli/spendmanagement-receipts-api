@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://89.116.225.51:8063/"
+    "BaseUrl": "https://spendmanagement-receipts-api.8ya11r.easypanel.host"
   },
   "RateLimitOptions": {
     "DisableRateLimitHeaders": false,

@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Host": "spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -30,7 +30,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Host": "spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -55,7 +55,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Host": "spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -74,6 +74,31 @@
         "Limit": 10
       },
       "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/getSpentPerCategory",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts-bff-api.8ya11r.easypanel.hos",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getSpentPerCategory",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
+      "SwaggerKey": "SpendManagement.Receipts.BFF.Api"
     }
   ]
 }

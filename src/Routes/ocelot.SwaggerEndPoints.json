@@ -7,7 +7,7 @@
         {
           "Name": "SpendManagement.Identity.Api",
           "Version": "v1",
-          "Url": "http://89.116.225.51:8071/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-identity-api.8ya11r.easypanel.host/swagger/v1/swagger.json"
         }
       ]
     },
@@ -18,7 +18,18 @@
         {
           "Name": "SpendManagement.Receipts.QueryHandler.Api",
           "Version": "v1",
-          "Url": "http://89.116.225.51:8061/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "SpendManagement.Receipts.BFF.Api",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "SpendManagement.Receipts.BFF.Api",
+          "Version": "v1",
+          "Url": "https://spendmanagement-receipts-bff-api.8ya11r.easypanel.host/swagger/v1/swagger.json"
         }
       ]
     },
@@ -29,7 +40,7 @@
         {
           "Name": "SpendManagement.Receipts.CommandHandler.Api",
           "Version": "v1",
-          "Url": "http://89.116.225.51:8060/swagger/v1/swagger.json"
+          "Url": "https://spendmanagement-receipts-commandhandler.8ya11r.easypanel.host/swagger/v1/swagger.json"
         }
       ]
     }

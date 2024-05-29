@@ -46,6 +46,6 @@ app.UseSwagger()
         options.PathToSwaggerGenerator = "/swagger/docs";
    });
 
-app.UseOcelot().Wait();
+await app.UseOcelot();
 app.MapControllers();
-app.Run();
+await app.RunAsync();

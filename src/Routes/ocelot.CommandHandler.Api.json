@@ -2,11 +2,11 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/addCategory",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addCategory",
@@ -27,11 +27,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
@@ -52,11 +52,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
@@ -77,11 +77,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/addVariableReceipt",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addVariableReceipt",
@@ -102,11 +102,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
@@ -127,11 +127,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
@@ -152,11 +152,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/addRecurringReceipt",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/addRecurringReceipt",
@@ -177,11 +177,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
@@ -202,11 +202,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",

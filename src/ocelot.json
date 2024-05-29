@@ -15,14 +15,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/addCategory",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -88,14 +88,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -161,14 +161,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -234,14 +234,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/addVariableReceipt",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -307,14 +307,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -380,14 +380,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -453,14 +453,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/addRecurringReceipt",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -526,14 +526,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -599,14 +599,14 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "89.116.225.51",
-          "Port": 8060
+          "Host": "spendmanagement-receipts-commandhandler.8ya11r.easypanel.host",
+          "Port": 443
         }
       ],
       "DownstreamHttpMethod": null,
       "DownstreamHttpVersion": null,
       "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "FileCacheOptions": {
         "TtlSeconds": 0,
         "Region": "",
@@ -672,7 +672,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -745,7 +745,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -818,7 +818,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -891,7 +891,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -964,7 +964,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -1037,7 +1037,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-identity-api.onrender.com",
+          "Host": "spendmanagement-identity-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -1110,7 +1110,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Host": "spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -1183,7 +1183,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Host": "spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -1256,7 +1256,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-queryhandler-api.onrender.com",
+          "Host": "spendmanagement-receipts-queryhandler-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -1313,6 +1313,79 @@
         "Get"
       ],
       "UpstreamPathTemplate": "/api/v1/getRecurringReceipts"
+    },
+    {
+      "AddClaimsToRequest": {},
+      "AddHeadersToRequest": {},
+      "AddQueriesToRequest": {},
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": null,
+        "AuthenticationProviderKeys": []
+      },
+      "ChangeDownstreamPathTemplate": {},
+      "DangerousAcceptAnyServerCertificateValidator": false,
+      "DelegatingHandlers": [],
+      "DownstreamHeaderTransform": {},
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-receipts-bff-api.8ya11r.easypanel.hos",
+          "Port": 443
+        }
+      ],
+      "DownstreamHttpMethod": null,
+      "DownstreamHttpVersion": null,
+      "DownstreamPathTemplate": "/api/v1/getSpentPerCategory",
+      "DownstreamScheme": "https",
+      "FileCacheOptions": {
+        "TtlSeconds": 0,
+        "Region": "",
+        "Header": null
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "MaxConnectionsPerServer": 2147483647,
+        "UseCookieContainer": false,
+        "UseProxy": true,
+        "UseTracing": false,
+        "PooledConnectionLifetimeSeconds": null
+      },
+      "Key": null,
+      "LoadBalancerOptions": {
+        "Expiry": 2147483647,
+        "Key": "",
+        "Type": ""
+      },
+      "Priority": 1,
+      "QoSOptions": {
+        "DurationOfBreak": 5000,
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "TimeoutValue": 3000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60.0,
+        "Limit": 10
+      },
+      "RequestIdKey": null,
+      "RouteClaimsRequirement": {},
+      "RouteIsCaseSensitive": false,
+      "SecurityOptions": {
+        "IPAllowedList": [],
+        "IPBlockedList": [],
+        "ExcludeAllowedFromBlocked": false
+      },
+      "ServiceName": null,
+      "ServiceNamespace": null,
+      "Timeout": 0,
+      "UpstreamHeaderTransform": {},
+      "UpstreamHost": null,
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "UpstreamPathTemplate": "/api/v1/getSpentPerCategory"
     }
   ],
   "DynamicRoutes": [],
