@@ -23,7 +23,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/getVariableReceipts",
@@ -48,7 +48,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/getRecurringReceipts",
@@ -73,14 +73,14 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.QueryHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/getSpentPerCategory",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-bff-api.8ya11r.easypanel.hos",
+          "Host": "spendmanagement-receipts-bff-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
@@ -98,7 +98,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.BFF.Api"
+      "SwaggerKey": "SpendManagement.Api"
     }
   ]
 }

@@ -23,7 +23,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
@@ -48,7 +48,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
@@ -73,7 +73,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/addVariableReceipt",
@@ -98,7 +98,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
@@ -123,7 +123,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
@@ -148,7 +148,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/addRecurringReceipt",
@@ -173,7 +173,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
@@ -198,7 +198,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     },
     {
       "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
@@ -223,7 +223,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       },
-      "SwaggerKey": "SpendManagement.Receipts.CommandHandler.Api"
+      "SwaggerKey": "SpendManagement.Api"
     }
   ]
 }
