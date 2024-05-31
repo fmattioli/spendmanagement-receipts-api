@@ -1329,7 +1329,7 @@
       "DownstreamHeaderTransform": {},
       "DownstreamHostAndPorts": [
         {
-          "Host": "spendmanagement-receipts-bff-api.8ya11r.easypanel.hos",
+          "Host": "spendmanagement-receipts-bff-api.8ya11r.easypanel.host",
           "Port": 443
         }
       ],
