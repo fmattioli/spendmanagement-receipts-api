@@ -7,7 +7,13 @@
           "Name": "SpendManagement Receipts.Api",
           "Version": "v1",
           "Url": "https://spendmanagement-specs-api.8ya11r.easypanel.host/receipts/swagger/v1/swagger.json"
-        },
+        }
+      ]
+    },
+    {
+      "Key": "SpendManagement.Identity.Api",
+      "TransformByOcelotConfig": true,
+      "Config": [
         {
           "Name": "SpendManagement.Identity.Api",
           "Version": "v1",
