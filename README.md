@@ -2,7 +2,7 @@
 This application has the purpose of being a gateway for the spendmanagement-receipts boundary.
 
 # How does it works?
-![Alt text](Diagram-Boundary.jpg?raw=true "Title")
+<img src="Diagram-Boundary.jpg" alt="Alt text" title="Title" style="width: 1250px; height: auto;">
 
 # Projects
 > [spendmanagement-identity-api](https://github.com/fmattioli/spendmanagement-identity) <br/>
