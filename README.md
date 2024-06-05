@@ -4,7 +4,8 @@ This application has the purpose of being a gateway for the spendmanagement-rece
 # How does it works?
 <img src="Diagram-Boundary.jpg" alt="Alt text" title="Title" style="width: 1250px; height: auto;">
 
-# Projects
+# Related projects
+> [spendmanagement-specs-api](https://github.com/fmattioli/spendmanagement-specs-api) <br/>
 > [spendmanagement-identity-api](https://github.com/fmattioli/spendmanagement-identity) <br/>
 > [spendmanagement-receipts-commandhandler-api](https://github.com/fmattioli/spendmanagement-receipts-commandhandler-api)  <br/>
 > [spendmanagement-receipts-queryhandler-api](https://github.com/fmattioli/spendmanagement-receipts-queryhandler-api)  <br/>
