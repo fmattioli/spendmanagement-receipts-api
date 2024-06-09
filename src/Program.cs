@@ -1,9 +1,13 @@
+using Microsoft.Extensions.Logging.Console;
+
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Polly;
 using SpendManagement.Receipts.Api.Extensions;
 using SpendManagement.Receipts.Api.Models;
+
+using static SpendManagement.Receipts.Api.Extensions.LogExtension;
 
 var builder = WebApplication.CreateBuilder(args);
 var routes = "Routes";
@@ -35,6 +39,12 @@ builder.Configuration
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(options =>
+{
+    options.FormatterName = "custom";
+}).AddConsoleFormatter<CustomConsoleFormatter, ConsoleFormatterOptions>();
 
 var app = builder.Build();
 
