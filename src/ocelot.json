@@ -46,7 +46,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -119,7 +119,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -192,7 +192,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -265,7 +265,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -338,7 +338,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -411,7 +411,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -484,7 +484,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -557,7 +557,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -630,7 +630,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -703,7 +703,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -776,7 +776,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -849,7 +849,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -922,7 +922,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -995,7 +995,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -1068,7 +1068,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -1141,7 +1141,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -1214,7 +1214,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -1287,7 +1287,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
@@ -1360,7 +1360,7 @@
       "QoSOptions": {
         "DurationOfBreak": 5000,
         "ExceptionsAllowedBeforeBreaking": 2,
-        "TimeoutValue": 3000
+        "TimeoutValue": 10000
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
