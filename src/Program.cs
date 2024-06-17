@@ -1,13 +1,10 @@
 using Microsoft.Extensions.Logging.Console;
-
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Polly;
 using SpendManagement.Receipts.Api.Extensions;
 using SpendManagement.Receipts.Api.Models;
-
-using static SpendManagement.Receipts.Api.Extensions.LogExtension;
 
 var builder = WebApplication.CreateBuilder(args);
 var routes = "Routes";
@@ -24,12 +21,10 @@ builder.Configuration
 var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
 
 builder.Services
+    .AddSwaggerForOcelot(builder.Configuration)
     .AddHealthCheckers(applicationSettings)
     .AddOcelot(builder.Configuration)
     .AddPolly();
-
-builder.Services
-    .AddSwaggerForOcelot(builder.Configuration);
 
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
@@ -57,5 +52,4 @@ app.UseSwagger()
    });
 
 await app.UseOcelot();
-app.MapControllers();
 await app.RunAsync();

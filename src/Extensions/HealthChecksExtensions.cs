@@ -12,12 +12,15 @@ namespace SpendManagement.Receipts.Api.Extensions
         public static IServiceCollection AddHealthCheckers(this IServiceCollection services, Settings? applicationSettings)
         {
             services.AddHealthChecks()
-                .AddUrlGroup(new Uri(applicationSettings?.SpendManagementIdentityApi?.Url + UrlHealthCheck), name: "SpendManagement.Identity")
                 .AddUrlGroup(new Uri(applicationSettings?.ReceiptsCommandHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.CommandHandler.Api")
                 .AddUrlGroup(new Uri(applicationSettings?.ReceiptsQueryHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.QueryHandler.Api")
                 .AddUrlGroup(new Uri(applicationSettings?.ReceiptsDomainApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.Domain.Api");
 
-            services.AddHealthChecksUI()
+            services
+                .AddHealthChecksUI(setup =>
+                {
+                    setup.SetEvaluationTimeInSeconds(600);
+                })
                 .AddInMemoryStorage();
 
             return services;
@@ -31,7 +34,11 @@ namespace SpendManagement.Receipts.Api.Extensions
                 ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
             });
 
-            app.UseHealthChecksUI(options => options.UIPath = "/monitor");
+            app.UseHealthChecksUI(options =>
+            {
+                options.UIPath = "/monitor";
+                options.AddCustomStylesheet("health-check-theme.css");
+            });
         }
     }
 }
