@@ -2,6 +2,6 @@
 {
     public class ReceiptsQueryHandlerApi
     {
-        public string? Url { get; set; }
+        public string Url { get; set; } = null!;
     }
 }

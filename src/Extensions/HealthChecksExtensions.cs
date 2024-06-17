@@ -7,14 +7,12 @@ namespace SpendManagement.Receipts.Api.Extensions
 {
     public static class HealthChecksExtensions
     {
-        private const string UrlHealthCheck = "/health";
-
-        public static IServiceCollection AddHealthCheckers(this IServiceCollection services, Settings? applicationSettings)
+        public static IServiceCollection AddHealthCheckers(this IServiceCollection services, Settings applicationSettings)
         {
             services.AddHealthChecks()
-                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsCommandHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.CommandHandler.Api")
-                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsQueryHandlerApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.QueryHandler.Api")
-                .AddUrlGroup(new Uri(applicationSettings?.ReceiptsDomainApi?.Url + UrlHealthCheck), name: "SpendManagement.Receipts.Domain.Api");
+                .AddUrlGroup(new Uri(applicationSettings.ReceiptsCommandHandlerApi.Url), name: "SpendManagement.Receipts.CommandHandler.Api")
+                .AddUrlGroup(new Uri(applicationSettings.ReceiptsQueryHandlerApi.Url), name: "SpendManagement.Receipts.QueryHandler.Api")
+                .AddUrlGroup(new Uri(applicationSettings.ReceiptsDomainApi.Url ), name: "SpendManagement.Receipts.Domain.Api");
 
             services
                 .AddHealthChecksUI(setup =>
