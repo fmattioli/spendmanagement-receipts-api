@@ -35,11 +35,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole(options =>
-{
-    options.FormatterName = "custom";
-}).AddConsoleFormatter<CustomConsoleFormatter, ConsoleFormatterOptions>();
+builder.Logging
+    .AddConsole()
+    .AddConsoleFormatter<CustomConsoleFormatter, ConsoleFormatterOptions>();
 
 var app = builder.Build();
 
