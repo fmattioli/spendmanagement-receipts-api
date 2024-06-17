@@ -37,7 +37,7 @@ namespace SpendManagement.Receipts.Api.Extensions
             app.UseHealthChecksUI(options =>
             {
                 options.UIPath = "/monitor";
-                options.AddCustomStylesheet("health-check-theme.css");
+                options.AddCustomStylesheet("conf/health-check-theme.css");
             });
         }
     }
