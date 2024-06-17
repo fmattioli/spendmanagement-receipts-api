@@ -22,7 +22,7 @@ var applicationSettings = builder.Configuration.GetSection("Settings").Get<Setti
 
 builder.Services
     .AddSwaggerForOcelot(builder.Configuration)
-    .AddHealthCheckers(applicationSettings)
+    .AddHealthCheckers(applicationSettings!)
     .AddOcelot(builder.Configuration)
     .AddPolly();
 
@@ -34,6 +34,8 @@ builder.Configuration
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Logging.ClearProviders();
 
 builder.Logging
     .AddConsole()
