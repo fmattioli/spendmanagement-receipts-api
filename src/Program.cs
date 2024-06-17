@@ -51,5 +51,11 @@ app.UseSwagger()
         options.PathToSwaggerGenerator = "/swagger/docs";
    });
 
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/swagger");
+    return Task.CompletedTask;
+});
+
 await app.UseOcelot();
 await app.RunAsync();
