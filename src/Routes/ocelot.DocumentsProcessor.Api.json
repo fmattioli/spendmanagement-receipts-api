@@ -1,0 +1,54 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/extractReceiptTextTyped",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-documentsprocessor-api.8ya11r.easypanel.host",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/extractReceiptTextTyped",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
+      "SwaggerKey": "SpendManagement.Api"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/getTextFromDocument",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spendmanagement-documentsprocessor-api.8ya11r.easypanel.host",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/getTextFromDocument",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 2,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      },
+      "SwaggerKey": "SpendManagement.Api"
+    }
+  ]
+}
