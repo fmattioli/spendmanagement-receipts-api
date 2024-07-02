@@ -26,7 +26,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/updateCategory/{id}",
+      "DownstreamPathTemplate": "/api/v1/updateCategory/{Id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -34,7 +34,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/updateCategory/{id}",
+      "UpstreamPathTemplate": "/api/v1/updateCategory/{Id}",
       "UpstreamHttpMethod": [ "Patch" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 2,
@@ -51,7 +51,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/deleteCategory/{id}",
+      "DownstreamPathTemplate": "/api/v1/deleteCategory/{Id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -59,7 +59,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/deleteCategory/{id}",
+      "UpstreamPathTemplate": "/api/v1/deleteCategory/{Id}",
       "UpstreamHttpMethod": [ "Delete" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 2,
@@ -101,7 +101,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/updateVariableReceipt/{Id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -109,7 +109,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/updateVariableReceipt/{Id}",
       "UpstreamHttpMethod": [ "Patch" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 2,
@@ -126,7 +126,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/deleteVariableReceipt/{Id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -134,7 +134,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/deleteVariableReceipt/{Id}",
       "UpstreamHttpMethod": [ "Delete" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 2,
@@ -176,7 +176,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/updateRecurringReceipt/{Id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -184,7 +184,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/updateRecurringReceipt/{Id}",
       "UpstreamHttpMethod": [ "Patch" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 2,
@@ -201,7 +201,7 @@
       "SwaggerKey": "SpendManagement.Api"
     },
     {
-      "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
+      "DownstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{Id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -209,7 +209,7 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{id}",
+      "UpstreamPathTemplate": "/api/v1/deleteRecurringReceipt/{Id}",
       "UpstreamHttpMethod": [ "Delete" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 2,
