@@ -6,12 +6,14 @@
         ReceiptsQueryHandlerApi ReceiptsQueryHandlerApi { get; }
         ReceiptsDomainApi ReceiptsDomainApi { get; }
         ReceiptsEventHandler ReceiptsEventHandler { get; }
+        public MltConfigsSettings MltConfigsSettings { get; }
     }
     public record Settings : ISettings
     {
-        public ReceiptsCommandHandlerApi ReceiptsCommandHandlerApi { get; set; } = null!;
-        public ReceiptsQueryHandlerApi ReceiptsQueryHandlerApi { get; set; } = null!;
-        public ReceiptsDomainApi ReceiptsDomainApi { get; set; } = null!;
-        public ReceiptsEventHandler ReceiptsEventHandler { get; set; } = null!;
+        public required ReceiptsCommandHandlerApi ReceiptsCommandHandlerApi { get; set; }
+        public required ReceiptsQueryHandlerApi ReceiptsQueryHandlerApi { get; set; }
+        public required ReceiptsDomainApi ReceiptsDomainApi { get; set; }
+        public required ReceiptsEventHandler ReceiptsEventHandler { get; set; }
+        public required MltConfigsSettings MltConfigsSettings { get; set; }
     }
 }

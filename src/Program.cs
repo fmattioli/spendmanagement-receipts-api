@@ -1,8 +1,8 @@
-using Microsoft.Extensions.Logging.Console;
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Polly;
+using Serilog;
 using SpendManagement.Receipts.Api.Extensions;
 using SpendManagement.Receipts.Api.Models;
 
@@ -18,7 +18,7 @@ builder.Configuration
     .AddJsonFile("conf/appsettings.json", false, reloadOnChange: true)
     .AddJsonFile($"conf/appsettings.{enviroment}.json", true, reloadOnChange: true);
 
-var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>();
+var applicationSettings = builder.Configuration.GetSection("Settings").Get<Settings>()!;
 
 builder.Services
     .AddSwaggerForOcelot(builder.Configuration)
@@ -34,12 +34,9 @@ builder.Configuration
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddOpenTelemetry(applicationSettings.MltConfigsSettings);
 
-builder.Logging.ClearProviders();
-
-builder.Logging
-    .AddConsole()
-    .AddConsoleFormatter<CustomConsoleFormatter, ConsoleFormatterOptions>();
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 
